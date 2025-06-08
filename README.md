@@ -1,9 +1,6 @@
 # mtailor
 
 
-
-Here is the updated `README.md` **without emojis**:
-
 ---
 
 ```markdown
@@ -16,7 +13,7 @@ This project demonstrates how to train a ResNet18 model on the CIFAR-10 dataset 
 ## Project Structure
 
 ```
-
+```
 mtailor/
 │
 ├── model.pth                  # Trained model weights
@@ -34,7 +31,7 @@ mtailor/
 
 ### 1. Clone the Repository
 
-```bash
+```
 git clone https://github.com/ayushkumar/mtailor.git
 cd mtailor
 ````
@@ -54,14 +51,14 @@ source .venv/bin/activate
 
 If you haven't already generated `requirements.txt`, you can do:
 
-```bash
+```
 pip install torch torchvision pillow
 pip freeze > requirements.txt
 ```
 
 Otherwise, install from it:
 
-```bash
+```
 pip install -r requirements.txt
 ```
 
@@ -71,7 +68,7 @@ pip install -r requirements.txt
 
 To train the ResNet18 model on CIFAR-10 and save weights to `model.pth`:
 
-```bash
+```
 python train.py
 ```
 
@@ -107,19 +104,19 @@ Make sure you have the Cerebrium CLI installed.
 
 ### 1. Authenticate:
 
-```bash
+```
 cerebrium login
 ```
 
 ### 2. Deploy the app:
 
-```bash
+```
 cerebrium deploy
 ```
 
 This will:
 
-* Package `inference.py` as the handler
+* Package `main.py` as the handler
 * Upload your `model.pth`
 * Serve your model as a REST API
 
