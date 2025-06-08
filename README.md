@@ -18,9 +18,10 @@ mtailor/
 │
 ├── model.pth                  # Trained model weights
 ├── train.py                   # Script to train ResNet18 on CIFAR-10
-├── inference.py               # Inference handler (used in API deployment)
-├── cerebrium.toml             # Cerebrium deployment config
-├── requirements.txt           # Python dependencies
+├── mtailor
+|     ---inference.py               # Inference handler (used in API deployment)
+|     ---cerebrium.toml             # Cerebrium deployment config
+├──     requirements.txt           # Python dependencies
 └── README.md                  # This file
 
 ````
